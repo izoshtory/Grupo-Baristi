@@ -118,7 +118,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, [tabindex]:focus-vis
   font-size: 13px; letter-spacing: .18em;
 }
 .star-divider::before, .star-divider::after {
-  content: "\\2605";
+  content: "\2605";
   font-size: 11px;
   opacity: .7;
 }
@@ -261,7 +261,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, [tabindex]:focus-vis
   z-index: 2;
 }
 .welcome__mark::before, .welcome__mark::after {
-  content: "\\2605"; position: absolute; color: var(--brass-light); font-size: 13px; top: 50%; transform: translateY(-50%);
+  content: "\2605"; position: absolute; color: var(--brass-light); font-size: 13px; top: 50%; transform: translateY(-50%);
 }
 .welcome__mark::before { left: -26px; }
 .welcome__mark::after { right: -26px; }
