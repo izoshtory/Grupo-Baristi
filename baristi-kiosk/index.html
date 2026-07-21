@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
+<title>Baristi Tostadores — Kiosk</title>
+<meta name="description" content="Self-service ordering kiosk for Baristi Tostadores">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div id="kiosk">
+
+  <!-- ============ 1. WELCOME ============ -->
+  <section class="screen active" id="screen-welcome">
+    <div class="welcome__steam" aria-hidden="true"><span></span><span></span><span></span></div>
+
+    <div class="welcome__mark" aria-hidden="true">
+      <svg viewBox="0 0 100 100" fill="none" stroke="#c2a877" stroke-width="5">
+        <path d="M28 18h22c11 0 18 6 18 15 0 7-4 11-9 13 7 2 12 7 12 15 0 10-8 17-20 17H28V18z"/>
+        <path d="M28 50h20"/>
+      </svg>
+    </div>
+    <p class="welcome__eyebrow">GRUPO BARISTI · TOSTADORES</p>
+    <h1 class="welcome__title" data-t="welcome_title_line1">Handcrafted <em>coffee, made slow.</em></h1>
+    <p class="welcome__sub" data-t="welcome_sub">Artisanal coffee, tónicos and after-hours drinks — roasted and poured the Baristi way.</p>
+
+    <button class="btn-start" id="btnStartOrder" data-t="start_order">Start Order</button>
+
+    <div class="welcome__lang" role="group" aria-label="Language">
+      <button data-lang="en">English</button>
+      <button data-lang="es">Español</button>
+    </div>
+  </section>
+
+  <!-- ============ 2. CATEGORIES ============ -->
+  <section class="screen" id="screen-categories">
+    <header class="topbar">
+      <div class="topbar__left">
+        <button class="topbar__back" data-nav-back="screen-welcome" aria-label="Back"></button>
+        <span class="topbar__brand">BARISTI <small>TOSTADORES</small></span>
+      </div>
+      <div class="topbar__right">
+        <div class="lang-toggle">
+          <button data-lang="en">EN</button>
+          <button data-lang="es">ES</button>
+        </div>
+        <button class="cart-pill" data-nav-cart>
+          <span aria-hidden="true" id="cartIconSlot"></span>
+          <span data-t="your_order">Your Order</span>
+          <span class="cart-pill__badge" id="cartBadgeCategories">0</span>
+        </button>
+      </div>
+    </header>
+    <div class="content-pad">
+      <div class="star-divider" style="justify-content:flex-start;margin-bottom:10px;">MENU</div>
+      <h2 class="section-title" data-t="categories_title">What are you craving?</h2>
+      <p class="section-sub" data-t="categories_sub">Choose a category to get started.</p>
+      <div class="category-grid" id="categoryGrid"></div>
+    </div>
+  </section>
+
+  <!-- ============ 3. MENU (products) ============ -->
+  <section class="screen" id="screen-menu">
+    <header class="topbar">
+      <div class="topbar__left">
+        <button class="topbar__back" data-nav-back="screen-categories" aria-label="Back"></button>
+        <span class="topbar__brand" id="menuTitle">Category</span>
+      </div>
+      <div class="topbar__right">
+        <div class="lang-toggle">
+          <button data-lang="en">EN</button>
+          <button data-lang="es">ES</button>
+        </div>
+        <button class="cart-pill" data-nav-cart>
+          <span data-t="your_order">Your Order</span>
+          <span class="cart-pill__badge" id="cartBadgeMenu">0</span>
+        </button>
+      </div>
+    </header>
+    <div class="content-pad">
+      <p class="section-sub" id="menuSub" style="margin-bottom:18px;">0 items</p>
+      <div class="age-banner" id="ageBanner" style="display:none;"></div>
+      <div class="menu-toolbar">
+        <div class="search-box">
+          <span aria-hidden="true" id="searchIconSlot"></span>
+          <input type="text" id="menuSearch" data-t-placeholder="search_placeholder" placeholder="Search the menu…" aria-label="Search menu">
+        </div>
+      </div>
+      <div class="chip-row" id="chipRow"></div>
+      <div class="menu-grid" id="menuGrid" style="margin-top:22px;"></div>
+    </div>
+  </section>
+
+  <!-- ============ 5. CART ============ -->
+  <section class="screen" id="screen-cart">
+    <header class="topbar">
+      <div class="topbar__left">
+        <button class="topbar__back" data-nav-back="screen-categories" aria-label="Back"></button>
+        <span class="topbar__brand" data-t="your_order">Your Order</span>
+      </div>
+    </header>
+    <div class="cart-layout">
+      <div class="cart-empty" id="cartEmpty" style="display:none;">
+        <span id="cartEmptyIconSlot"></span>
+        <h2 class="section-title" data-t="cart_empty_title">Your cart is empty</h2>
+        <p data-t="cart_empty_sub">Add something delicious to get started.</p>
+        <button class="btn-browse" id="btnBrowseMenu" data-t="browse_menu">Browse Menu</button>
+      </div>
+      <div class="cart-list" id="cartList"></div>
+      <div class="cart-summary" id="cartSummary" style="display:none;">
+        <div class="summary-row"><span data-t="subtotal">Subtotal</span><span id="sumSubtotal">$0</span></div>
+        <div class="summary-row"><span data-t="tax">Estimated tax</span><span id="sumTax">$0</span></div>
+        <div class="summary-row total"><span data-t="total">Total</span><span id="sumTotal">$0</span></div>
+        <button class="btn-checkout" id="btnCheckout" data-t="checkout">Checkout</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 6. THANK YOU ============ -->
+  <section class="screen" id="screen-thankyou">
+    <div class="check-circle">
+      <svg viewBox="0 0 24 24"><path d="M5 13l4 4L19 7" stroke="white" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </div>
+    <h1 class="ty-title" data-t="order_confirmed">Order Confirmed</h1>
+    <p class="ty-sub" data-t="thank_you_sub">We're on it — thanks for ordering with Baristi.</p>
+    <div class="ty-order-box">
+      <div class="ty-order-box__item">
+        <div class="ty-order-box__label" data-t="order_number">Order Number</div>
+        <div class="ty-order-box__value" id="orderNumber">#000</div>
+      </div>
+      <div class="ty-order-box__item">
+        <div class="ty-order-box__label" data-t="prep_time">Ready In</div>
+        <div class="ty-order-box__value" id="prepTime">5 min</div>
+      </div>
+    </div>
+    <button class="btn-new-order" id="btnNewOrder" data-t="new_order">New Order</button>
+  </section>
+
+  <!-- ============ 4. CUSTOMIZATION SHEET (overlay) ============ -->
+  <div class="overlay" id="customizeOverlay">
+    <div class="sheet">
+      <button class="sheet__close" id="sheetClose" aria-label="Close">✕</button>
+      <div class="sheet__hero placeholder" id="sheetHero"></div>
+      <div class="sheet__body">
+        <h2 class="sheet__title" id="sheetTitle">Product</h2>
+        <p class="sheet__desc" id="sheetDesc">Description</p>
+        <div id="sheetOptions"></div>
+      </div>
+      <div class="sheet__footer">
+        <button class="btn-add-order" id="btnAddOrder">
+          <span>Add to Order</span><span>$0</span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <div class="toast" id="toast"></div>
+
+</div>
+
+<script src="js/icons.js"></script>
+<script src="js/storage.js"></script>
+<script src="js/cart.js"></script>
+<script src="js/menu.js"></script>
+<script src="js/app.js"></script>
+<script>
+  // Drop in icon markup that can't be templated at parse time (kept inline
+  // in the HTML above as empty slots, filled here once Icons is loaded).
+  document.getElementById('cartIconSlot').innerHTML = Icons.bag;
+  document.getElementById('searchIconSlot').innerHTML = Icons.search;
+  document.getElementById('cartEmptyIconSlot').innerHTML = Icons.bag;
+  document.querySelectorAll('.topbar__back').forEach(b => { if (!b.innerHTML.trim()) b.innerHTML = Icons.back; });
+</script>
+</body>
+</html>

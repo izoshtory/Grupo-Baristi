@@ -1,0 +1,88 @@
+{
+  "categories": [
+    { "id": "hot",       "name_en": "Hot Coffee",         "name_es": "Bebidas Calientes", "image": "images/cat-hot.jpg",   "icon": "flame" },
+    { "id": "iced",      "name_en": "On the Rocks",       "name_es": "En las Rocas",      "image": "images/cat-iced.jpg",  "icon": "snow" },
+    { "id": "frappes",   "name_en": "Frappes",            "name_es": "Frappes",           "image": "images/cat-frappe.jpg","icon": "blend" },
+    { "id": "smoothies", "name_en": "Smoothies",          "name_es": "Smoothies",         "image": "images/cat-smoothie.jpg","icon": "fruit" },
+    { "id": "tonics",    "name_en": "Tonics & Limonata",  "name_es": "Tónicos y Limonata","image": "images/cat-tonic.jpg", "icon": "citrus" },
+    { "id": "cocktails", "name_en": "Baristi After Hours (21+)", "name_es": "Baristi After Hours (21+)", "image": "images/cat-cocktail.jpg", "icon": "glass", "adult": true },
+    { "id": "bakery",    "name_en": "Pastries",           "name_es": "Panadería",         "image": "images/cat-bakery.jpg","icon": "croissant" }
+  ],
+  "items": [
+    { "id": 1,  "category": "hot", "name_en": "Americano",   "name_es": "Americano",   "description_en": "Baristi espresso, hot water, nothing else in the way.", "description_es": "Espresso Baristi con agua caliente, sin nada de por medio.", "image": "images/americano.jpg", "sizes": { "8oz": 44, "12oz": 50, "16oz": 56 } },
+    { "id": 2,  "category": "hot", "name_en": "Talega",      "name_es": "Talega",      "description_en": "House drip coffee brewed the traditional talega-cloth way.", "description_es": "Café de olla filtrado con la talega tradicional.", "image": "images/talega.jpg", "sizes": { "8oz": 49, "12oz": 55, "16oz": 62 } },
+    { "id": 3,  "category": "hot", "name_en": "Café de la Olla", "name_es": "Café de la Olla", "description_en": "Simmered with piloncillo, cinnamon and clove, Mexico's classic clay-pot coffee.", "description_es": "Café hervido en olla de barro con piloncillo, canela y clavo.", "image": "images/de-la-olla.jpg", "sizes": { "8oz": 47, "12oz": 53, "16oz": 60 } },
+    { "id": 4,  "category": "hot", "name_en": "Cappuccino",  "name_es": "Cappuccino",  "description_en": "Espresso and steamed milk, finished with a thick cap of foam.", "description_es": "Espresso y leche vaporizada con una capa espesa de espuma.", "image": "images/cappuccino.jpg", "sizes": { "8oz": 53, "12oz": 60, "16oz": 68 } },
+    { "id": 5,  "category": "hot", "name_en": "El Lechero",  "name_es": "El Lechero",  "description_en": "Hand-poured hot milk over coffee, sabor a tradición.", "description_es": "Leche caliente vertida a mano sobre café. Sabor a tradición.", "image": "images/lechero.jpg", "sizes": { "8oz": 68, "12oz": 77, "16oz": 87 } },
+    { "id": 6,  "category": "hot", "name_en": "Hot Chocolate", "name_es": "Chocolate", "description_en": "Rich Mexican-style hot chocolate, gently sweetened.", "description_es": "Chocolate caliente estilo mexicano, endulzado con delicadeza.", "image": "images/chocolate.jpg", "sizes": { "8oz": 53, "12oz": 60, "16oz": 68 } },
+    { "id": 7,  "category": "hot", "name_en": "Mocha",       "name_es": "Mocha",       "description_en": "Espresso, steamed milk and real chocolate.", "description_es": "Espresso, leche vaporizada y chocolate real.", "image": "images/mocha.jpg", "sizes": { "8oz": 69, "12oz": 78, "16oz": 88 } },
+    { "id": 8,  "category": "hot", "name_en": "Latte",       "name_es": "Latte",       "description_en": "Smooth espresso balanced with silky steamed milk.", "description_es": "Espresso suave equilibrado con leche vaporizada sedosa.", "image": "images/latte.jpg", "sizes": { "8oz": 61, "12oz": 69, "16oz": 78 } },
+    { "id": 9,  "category": "hot", "name_en": "Chai Azteca", "name_es": "Chai Azteca", "description_en": "Spiced chai steeped in-house, no coffee.", "description_es": "Chai especiado preparado en casa, sin café.", "image": "images/chai-azteca.jpg", "sizes": { "12oz": 77, "16oz": 87 } },
+    { "id": 10, "category": "hot", "name_en": "Chai with Coffee", "name_es": "Chai c/Café", "description_en": "Our spiced chai layered with a shot of espresso.", "description_es": "Nuestro chai especiado con un shot de espresso.", "image": "images/chai-cafe.jpg", "sizes": { "12oz": 85, "16oz": 96 } },
+    { "id": 11, "category": "hot", "name_en": "Matcha",      "name_es": "Matcha",      "description_en": "Ceremonial-grade matcha whisked with steamed milk.", "description_es": "Matcha grado ceremonial batido con leche vaporizada.", "image": "images/matcha.jpg", "sizes": { "12oz": 77, "16oz": 87 } },
+    { "id": 12, "category": "hot", "name_en": "Artisan Tea", "name_es": "Té Artesanal", "description_en": "Rotating selection of loose-leaf tea.", "description_es": "Selección rotativa de té de hoja suelta.", "image": "images/te-artesanal.jpg", "sizes": { "16oz": 65 } },
+
+    { "id": 20, "category": "iced", "name_en": "Iced Americano", "name_es": "Americano en las Rocas", "description_en": "Espresso over ice, crisp and clean.", "description_es": "Espresso sobre hielo, fresco y limpio.", "image": "images/americano-iced.jpg", "sizes": { "16oz": 65 } },
+    { "id": 21, "category": "iced", "name_en": "Iced De la Olla", "name_es": "De la Olla en las Rocas", "description_en": "Our spiced clay-pot coffee, served over ice.", "description_es": "Nuestro café de olla especiado, servido sobre hielo.", "image": "images/de-la-olla-iced.jpg", "sizes": { "16oz": 75 } },
+    { "id": 22, "category": "iced", "name_en": "Iced Latte", "name_es": "Latte en las Rocas", "description_en": "Espresso and cold milk over ice.", "description_es": "Espresso y leche fría sobre hielo.", "image": "images/latte-iced.jpg", "sizes": { "16oz": 78 } },
+    { "id": 23, "category": "iced", "name_en": "Iced Chai Azteca", "name_es": "Chai Azteca en las Rocas", "description_en": "Spiced chai poured cold over ice.", "description_es": "Chai especiado servido frío sobre hielo.", "image": "images/chai-azteca-iced.jpg", "sizes": { "16oz": 90 } },
+    { "id": 24, "category": "iced", "name_en": "Iced Mocha", "name_es": "Mocha en las Rocas", "description_en": "Espresso, milk and chocolate, chilled over ice.", "description_es": "Espresso, leche y chocolate, frío sobre hielo.", "image": "images/mocha-iced.jpg", "sizes": { "16oz": 92 } },
+    { "id": 25, "category": "iced", "name_en": "Iced Chai with Coffee", "name_es": "Chai c/Café en las Rocas", "description_en": "Spiced chai and espresso, served cold.", "description_es": "Chai especiado y espresso, servido frío.", "image": "images/chai-cafe-iced.jpg", "sizes": { "16oz": 95 } },
+    { "id": 26, "category": "iced", "name_en": "Iced Chocolate", "name_es": "Chocolate en las Rocas", "description_en": "Mexican-style chocolate, served over ice.", "description_es": "Chocolate estilo mexicano, servido sobre hielo.", "image": "images/chocolate-iced.jpg", "sizes": { "16oz": 79 } },
+    { "id": 27, "category": "iced", "name_en": "Iced Artisan Tea", "name_es": "Té Artesanal en las Rocas", "description_en": "Loose-leaf tea, brewed and chilled over ice.", "description_es": "Té de hoja suelta, preparado y servido sobre hielo.", "image": "images/te-artesanal-iced.jpg", "sizes": { "16oz": 79 } },
+    { "id": 28, "category": "iced", "name_en": "Onix", "name_es": "Onix", "description_en": "Our darkest cold-brew signature, bold and smooth.", "description_es": "Nuestro cold brew más oscuro, intenso y suave.", "image": "images/onix.jpg", "sizes": { "16oz": 90 } },
+    { "id": 29, "category": "iced", "name_en": "Iced Matcha", "name_es": "Matcha en las Rocas", "description_en": "Ceremonial matcha shaken over ice.", "description_es": "Matcha ceremonial agitado sobre hielo.", "image": "images/matcha-iced.jpg", "sizes": { "16oz": 92 } },
+
+    { "id": 30, "category": "frappes", "name_en": "Vanilla Frappe", "name_es": "Frappe Vainilla", "description_en": "Blended coffee frappe with real vanilla.", "description_es": "Frappe de café licuado con vainilla real.", "image": "images/frappe-vainilla.jpg", "sizes": { "16oz": 88 } },
+    { "id": 31, "category": "frappes", "name_en": "Mocha Frappe", "name_es": "Frappe Mocha", "description_en": "Blended coffee frappe with rich chocolate.", "description_es": "Frappe de café licuado con chocolate.", "image": "images/frappe-mocha.jpg", "sizes": { "16oz": 88 } },
+    { "id": 32, "category": "frappes", "name_en": "Caramel Frappe", "name_es": "Frappe Caramelo", "description_en": "Blended coffee frappe swirled with caramel.", "description_es": "Frappe de café licuado con caramelo.", "image": "images/frappe-caramelo.jpg", "sizes": { "16oz": 96 } },
+    { "id": 33, "category": "frappes", "name_en": "Matcha Frappe", "name_es": "Frappe Matcha", "description_en": "Blended matcha frappe, smooth and vegetal.", "description_es": "Frappe de matcha licuado, suave y herbal.", "image": "images/frappe-matcha.jpg", "sizes": { "16oz": 97 } },
+    { "id": 34, "category": "frappes", "name_en": "Cajeta Frappe", "name_es": "Frappe Cajeta", "description_en": "Blended coffee frappe with Mexican goat's-milk caramel.", "description_es": "Frappe de café licuado con cajeta.", "image": "images/frappe-cajeta.jpg", "sizes": { "16oz": 109 } },
+    { "id": 35, "category": "frappes", "name_en": "Chai Azteca Frappe", "name_es": "Frappe Chai Azteca", "description_en": "Blended spiced chai frappe.", "description_es": "Frappe de chai especiado licuado.", "image": "images/frappe-chai-azteca.jpg", "sizes": { "16oz": 95 } },
+    { "id": 36, "category": "frappes", "name_en": "Chai with Coffee Frappe", "name_es": "Frappe Chai c/Café", "description_en": "Blended chai frappe with a shot of espresso.", "description_es": "Frappe de chai licuado con un shot de espresso.", "image": "images/frappe-chai-cafe.jpg", "sizes": { "16oz": 97 } },
+    { "id": 37, "category": "frappes", "name_en": "Mexican Oreo® Frappe", "name_es": "Frappe Mexican Oreo®", "description_en": "Blended frappe loaded with Mexican Oreo® cookies.", "description_es": "Frappe licuado cargado de galleta Mexican Oreo®.", "image": "images/frappe-mexican-oreo.jpg", "sizes": { "16oz": 120 } },
+    { "id": 38, "category": "frappes", "name_en": "Oreo® Frappe", "name_es": "Frappe Oreo®", "description_en": "Blended frappe with classic Oreo® cookies.", "description_es": "Frappe licuado con galleta Oreo® clásica.", "image": "images/frappe-oreo.jpg", "sizes": { "16oz": 115 } },
+    { "id": 39, "category": "frappes", "name_en": "Onix Frappe", "name_es": "Frappe Onix", "description_en": "Our darkest cold-brew, blended into a frappe.", "description_es": "Nuestro cold brew más oscuro, licuado en frappe.", "image": "images/frappe-onix.jpg", "sizes": { "16oz": 120 } },
+
+    { "id": 40, "category": "smoothies", "name_en": "Guanabana Smoothie", "name_es": "Smoothie Guanábana", "description_en": "Blended fresh soursop, cool and tropical.", "description_es": "Guanábana fresca licuada, fresca y tropical.", "image": "images/smoothie-guanabana.jpg", "sizes": { "16oz": 89 } },
+    { "id": 41, "category": "smoothies", "name_en": "Mamey Smoothie", "name_es": "Smoothie Mamey", "description_en": "Blended fresh mamey, naturally sweet.", "description_es": "Mamey fresco licuado, dulzura natural.", "image": "images/smoothie-mamey.jpg", "sizes": { "16oz": 89 } },
+    { "id": 42, "category": "smoothies", "name_en": "Maracuya Smoothie", "name_es": "Smoothie Maracuyá", "description_en": "Blended passion fruit, bright and tart.", "description_es": "Maracuyá licuado, brillante y ácido.", "image": "images/smoothie-maracuya.jpg", "sizes": { "16oz": 95 } },
+    { "id": 43, "category": "smoothies", "name_en": "Strawberries & Cream", "name_es": "Fresas con Crema", "description_en": "Blended strawberries with sweet cream.", "description_es": "Fresas licuadas con crema dulce.", "image": "images/smoothie-fresas.jpg", "sizes": { "16oz": 98 } },
+
+    { "id": 50, "category": "tonics", "name_en": "Tonic or Limonata", "name_es": "Tónico o Limonata", "description_en": "Refreshing tonic water and lemon, add cold brew or espresso.", "description_es": "Refrescante agua tónica y limón. Agrega cold brew o espresso.", "image": "images/tonico.jpg", "sizes": { "16oz": 89 } },
+
+    { "id": 60, "category": "cocktails", "name_en": "Lemon Blush", "name_es": "Lemon Blush", "description_en": "Tonic water, fresh yellow lemon and espresso, sweetened with natural syrup.", "description_es": "Refrescante bebida de agua tónica, limón amarillo natural y espresso. Endulzado con jarabe natural.", "image": "images/cocktail-lemon-blush.jpg", "price": 85, "adult": true },
+    { "id": 61, "category": "cocktails", "name_en": "Rosé Tonic", "name_es": "Rosé Tonic", "description_en": "Fresh strawberry sauce, yellow lemon, tonic water and nitro cold brew.", "description_es": "Deliciosa salsa de fresa natural, limón amarillo, agua tónica y nitro cold brew. Endulzado con jarabe natural.", "image": "images/cocktail-rose-tonic.jpg", "price": 95, "adult": true },
+    { "id": 62, "category": "cocktails", "name_en": "Coffee and Tonic", "name_es": "Coffee and Tonic", "description_en": "Nitro cold brew with tonic water, bitters and orange zest.", "description_es": "Nitro cold brew, con agua tónica, angostura y ralladura de naranja.", "image": "images/cocktail-coffee-tonic.jpg", "price": 85, "adult": true },
+    { "id": 63, "category": "cocktails", "name_en": "Old Fashioned Smoked", "name_es": "Old Fashioned Smoked", "description_en": "Nitro cold brew sweetened with agave honey, bitters and orange zest, smoked with wood.", "description_es": "Nitro cold brew, endulzado con miel de agave, angostura y ralladura de naranja. Ahumado con un trozo de madera.", "image": "images/cocktail-old-fashioned.jpg", "price": 95, "adult": true },
+    { "id": 64, "category": "cocktails", "name_en": "La Crème", "name_es": "La Crème", "description_en": "Nitro cold brew, coconut cream, sweet cream and chocolate sauce.", "description_es": "Nitro cold brew, crema de coco, crema dulce y salsa de chocolate.", "image": "images/cocktail-la-creme.jpg", "price": 85, "adult": true },
+    { "id": 65, "category": "cocktails", "name_en": "Honey Espresso", "name_es": "Honey Espresso", "description_en": "Double espresso, nutmeg and cinnamon, sweetened with agave honey.", "description_es": "Espresso doble, nuez moscada y canela endulzado con miel de agave.", "image": "images/cocktail-honey-espresso.jpg", "price": 85, "adult": true },
+    { "id": 66, "category": "cocktails", "name_en": "Martini Espresso", "name_es": "Martini Espresso", "description_en": "Double espresso, nitro cold brew, coffee liqueur essence and chocolate.", "description_es": "Espresso doble, nitro cold brew, esencia de licor de café y chocolate.", "image": "images/cocktail-martini-espresso.jpg", "price": 85, "adult": true },
+    { "id": 67, "category": "cocktails", "name_en": "Vietnamita", "name_es": "Vietnamita", "description_en": "Nitro cold brew, nutmeg and condensed milk.", "description_es": "Nitro cold brew, nuez moscada y leche condensada.", "image": "images/cocktail-vietnamita.jpg", "price": 85, "adult": true },
+
+    { "id": 70, "category": "bakery", "name_en": "Butter Croissant", "name_es": "Croissant de Mantequilla", "description_en": "Flaky, all-butter croissant baked fresh daily.", "description_es": "Croissant hojaldrado de mantequilla, horneado a diario.", "image": "images/croissant.jpg", "price": 42 },
+    { "id": 71, "category": "bakery", "name_en": "Concha", "name_es": "Concha", "description_en": "Classic Mexican sweet bread with a sugar-shell topping.", "description_es": "Pan dulce mexicano clásico con costra de azúcar.", "image": "images/concha.jpg", "price": 35 },
+    { "id": 72, "category": "bakery", "name_en": "Cajeta Cinnamon Roll", "name_es": "Rol de Canela con Cajeta", "description_en": "Warm cinnamon roll finished with goat's-milk caramel.", "description_es": "Rol de canela tibio bañado en cajeta.", "image": "images/cinnamon-roll.jpg", "price": 55 },
+    { "id": 73, "category": "bakery", "name_en": "Tres Leches Slice", "name_es": "Rebanada Tres Leches", "description_en": "Soaked sponge cake with three milks and cinnamon.", "description_es": "Pastel esponjoso bañado en tres leches y canela.", "image": "images/tres-leches.jpg", "price": 58 }
+  ],
+  "modifiers": {
+    "milk": { "label_en": "Milk", "label_es": "Leche", "options": [
+      { "id": "whole", "name_en": "Whole", "name_es": "Entera", "price": 0 },
+      { "id": "oat", "name_en": "Oat", "name_es": "Avena", "price": 12 },
+      { "id": "almond", "name_en": "Almond", "name_es": "Almendra", "price": 12 },
+      { "id": "soy", "name_en": "Soy", "name_es": "Soya", "price": 10 }
+    ]},
+    "sweetness": { "label_en": "Sweetness", "label_es": "Dulzor", "options": [
+      { "id": "none", "name_en": "None", "name_es": "Sin azúcar", "price": 0 },
+      { "id": "light", "name_en": "Light", "name_es": "Ligero", "price": 0 },
+      { "id": "regular", "name_en": "Regular", "name_es": "Regular", "price": 0 },
+      { "id": "extra", "name_en": "Extra", "name_es": "Extra", "price": 0 }
+    ]},
+    "extras": { "label_en": "Extras", "label_es": "Extras", "options": [
+      { "id": "espresso", "name_en": "Extra Espresso Shot", "name_es": "Shot Extra de Espresso", "price": 15 },
+      { "id": "whipped", "name_en": "Whipped Cream", "name_es": "Crema Batida", "price": 10 },
+      { "id": "syrup", "name_en": "Extra Syrup", "name_es": "Jarabe Extra", "price": 8 }
+    ]}
+  },
+  "tax_rate": 0.16
+}
