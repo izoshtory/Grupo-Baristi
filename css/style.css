@@ -218,6 +218,15 @@ a:focus-visible, button:focus-visible, input:focus-visible, [tabindex]:focus-vis
   color: var(--cream);
   position: relative;
   padding: 40px 24px;
+    /* Background image + dark overlays */
+  background:
+    linear-gradient(180deg, rgba(28,19,13,.55), rgba(18,12,8,.90)),
+    radial-gradient(ellipse at 50% -10%, rgba(138,113,72,.35), transparent 55%),
+    url("../assets/background.jpg");
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 .welcome__steam {
   position: absolute; inset: 0; overflow: hidden; pointer-events: none; opacity: .5;
