@@ -46,7 +46,9 @@ const MenuModule = (() => {
       const isAdult = !!cat.adult;
       return `
         <button class="category-card ${isAdult ? 'adult' : ''}" style="animation-delay:${i * 0.05}s" data-category="${cat.id}">
-          <div class="category-card__img" style="background-color:${isAdult ? '#141414' : '#e9dfc6'}"></div>
+          <div class="category-card__img placeholder" style="background-color:${isAdult ? '#141414' : '#e9dfc6'}">
+            <img src="${cat.image}" alt="" loading="lazy" onerror="this.style.display='none';">
+          </div>
           <div class="category-card__scrim"></div>
           ${isAdult ? `<span class="category-card__tag">21+</span>` : ''}
           <div class="category-card__label">
